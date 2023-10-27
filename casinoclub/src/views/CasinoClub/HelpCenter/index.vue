@@ -1,0 +1,1 @@
+<template>HelpCenter</template>

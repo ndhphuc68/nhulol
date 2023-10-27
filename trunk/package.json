@@ -1,0 +1,65 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "buildProdLh": "vue-cli-service build --mode lh",
+    "buildDev": "vue-cli-service build --mode development",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "@kyvg/vue3-notification": "^2.4.1",
+    "axios": "^0.27.2",
+    "click-outside-vue3": "^4.0.1",
+    "core-js": "^3.8.3",
+    "crypto-js": "^4.1.1",
+    "epic-spinners": "^2.0.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.38",
+    "pako": "^2.0.4",
+    "process": "^0.11.10",
+    "swiper": "^8.3.2",
+    "vue": "^3.2.13",
+    "vue-i18n": "^9.3.0-beta.1",
+    "vue-json-pretty": "^1.9.2",
+    "vue-json-viewer": "^3.0.4",
+    "vue-number-animation": "^1.1.2",
+    "vue-router": "^4.1.5",
+    "vue-spinner": "^1.0.4",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@intlify/vue-i18n-loader": "^3.0.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-cli-plugin-i18n": "~2.3.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}

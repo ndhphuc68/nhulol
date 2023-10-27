@@ -1,0 +1,17 @@
+<template>
+  <svg
+    width="29"
+    height="37"
+    viewBox="0 0 29 37"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M10.0002 26.6667L18.3335 18.3333L10.0002 10"
+      stroke="#3F3F46"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</template>

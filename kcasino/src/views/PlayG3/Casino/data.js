@@ -1,0 +1,22 @@
+export const casinoList = [
+    {key: 'ag_casino', name: 'Ag Game 1'},
+    // {key: 'bcocngo_casino', name: 'Bcocngo Game 1'},
+    {key: 'bg_casino', name: 'Bg Game 1'},
+    {key: 'cq9_casino', name: 'Cq9 Game 1'},
+    // {key: 'dowinn_casino', name: 'Dowinn Game 1'},
+    {key: 'dreamgaming_casino', name: 'Dreamgaming Game 1'},
+    {key: 'evolution_casino', name: 'Evolution Game 1'},
+    {key: 'ezugi_casino', name: 'Ezugi Game 1'},
+    // {key: 'go_casino', name: 'Go Game 1'},
+    {key: 'gpi_casino', name: 'Gpi Game 1'},
+    {key: 'microgaming_casino', name: 'Microgaming Game 1'},
+    {key: 'motivation_casino', name: 'Motivation Game 1'},
+    {key: 'orientalgame_casino', name: 'Orientalgame Game 1'},
+    {key: 'pragmatic_casino', name: 'Pragmatic Game 1'},
+    {key: 'skywind_casino', name: 'Skywind Game 1'},
+    {key: 'taishan_casino', name: 'Taishan Game 1'},
+    {key: 'vegas_casino', name: 'Vegas Game 1'},
+    {key: 'vivo_casino', name: 'Vivo Game 1'},
+    {key: 'wm_casino', name: 'Wm Game 1'},
+    // {key: 'netent_casino', name: 'netent Game 1'}
+];

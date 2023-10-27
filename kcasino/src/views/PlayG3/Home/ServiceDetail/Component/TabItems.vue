@@ -1,0 +1,52 @@
+<script setup>
+import { defineProps } from "vue";
+import { formatDate } from "@/utils/PlayG3";
+import {converTime} from "../../../../../utils";
+
+defineProps({
+  list: Array,
+  handleClickItem: Function,
+});
+</script>
+
+<template>
+  <div
+    class="item-service-detail"
+    v-for="(item, index) in list"
+    :key="index"
+    @click="handleClickItem(index, item.type)"
+  >
+    <div class="title">{{ item.title }}</div>
+    <div class="date">{{ converTime(item.createdAt) }}</div>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.item-service-detail {
+  display: flex;
+  margin: 12px 0;
+  font-size: 14px;
+  cursor: pointer;
+
+  .title {
+    width: 80%;
+    text-align: left;
+    max-height: 45px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+  }
+
+  .date {
+    width: 20%;
+    text-align: right;
+  }
+
+  &:hover {
+    .title {
+      color: var(--primaryPlayG3);
+    }
+  }
+}
+</style>

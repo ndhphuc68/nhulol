@@ -1,0 +1,32 @@
+export const listSlot = [
+    {
+        id:1,
+        urlImage:require('@/assets/FSCasino/slots/slot1.png'),
+        name:'BlackJack'
+    },
+    {
+        id:2,
+        urlImage:require('@/assets/FSCasino/slots/slot2.png'),
+        name:'Roulette'
+    },
+    {
+        id:3,
+        urlImage:require('@/assets/FSCasino/slots/slot3.png'),
+        name:'Slots'
+    },
+    {
+        id:4,
+        urlImage:require('@/assets/FSCasino/slots/slot4.png'),
+        name:'Roulette'
+    },
+    {
+        id:5,
+        urlImage:require('@/assets/FSCasino/slots/slot5.png'),
+        name:'Roulette'
+    },
+    {
+        id:6,
+        urlImage:require('@/assets/FSCasino/slots/slot6.png'),
+        name:'BlackJack'
+    }
+]

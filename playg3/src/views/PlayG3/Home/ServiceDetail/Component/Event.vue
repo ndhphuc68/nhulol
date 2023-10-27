@@ -1,0 +1,67 @@
+<script setup>
+import { computed } from "vue";
+import { useStore } from "vuex";
+import { formatDayMonth } from "@/utils/PlayG3";
+
+const store = useStore();
+
+const handleToggleViewDetail = (idx) => {
+  store.commit("handleToggle", "noticeEventFAQ");
+  store.commit("handleActiveTab", 1);
+  store.commit("handleActiveContent", idx);
+};
+const data = computed(() => store.getters.getEvent);
+</script>
+
+<template>
+  <div class="wrapper">
+    <button
+      v-for="(item, index) in data"
+      :key="index"
+      class="d-flex justify-content-between blog-item w-100"
+      @click="handleToggleViewDetail(index)"
+    >
+      <span class="w-80 content">
+        {{ item.no_subject }}
+      </span>
+      <span class="w-20">
+        {{ formatDayMonth(item.no_created) }}
+      </span>
+    </button>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.wrapper {
+  padding: 10px;
+  height: 10.9rem;
+  overflow-y: auto;
+  .blog-item {
+    margin: 12px 0;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primaryPlayG3);
+    }
+  }
+
+  .content {
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 80%;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+  }
+  .content {
+    max-width: 70%;
+  }
+}
+</style>

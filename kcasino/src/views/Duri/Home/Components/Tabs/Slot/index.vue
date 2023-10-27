@@ -1,0 +1,3 @@
+<template>
+    Slot
+</template>

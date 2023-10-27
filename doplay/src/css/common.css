@@ -1,0 +1,288 @@
+/*************** 폰트 추가 *****************/
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../../src/assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('../../src/assets/fonts/Manrope-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../../src/assets/fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraLight';
+    src: url('../../src/assets/fonts/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url('../../src/assets/fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*@font-face {*/
+/*    font-family: 'Manrope';*/
+/*    src: url('../../src/assets/fonts/Manrope-Medium.ttf') format('opentype');*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*}*/
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../../src/assets/fonts/Manrope-Regular.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../../src/assets/fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***************************************/
+
+
+*:lang(en) {
+    padding: 0;
+    margin: 0;
+    font-family: 'NotoSans', sans-serif;
+    font-weight: 300;
+}
+
+*:lang(ko) {
+    padding: 0;
+    margin: 0;
+    font-family: 'NotoSansKR', sans-serif;
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    outline: none;
+    border: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+input {
+    line-height: 0;
+    padding-left: 22px;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */
+    color: transparent;
+}
+
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .3s ease-in;
+}
+
+button:hover, button img:hover {
+    color: var(--primary);
+    transition: all .3s ease-in;
+    opacity: 0.9;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+    background-image: none;
+    background-size: 100% 100%;
+}
+
+/* 스크롤 바 */
+::-webkit-scrollbar-track {
+    background-color: #59657c;
+    border-radius: 10px;
+}
+
+/* 스크롤 바 밑의 배경 */
+::-webkit-scrollbar-thumb {
+    background: #9099b7;
+    border-radius: 10px;
+}
+
+/* 실질적 스크롤 바 */
+::-webkit-scrollbar-thumb:hover {
+    background: #63b7d6;
+}
+
+/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:active {
+    background: #63b7d6;
+}
+
+/* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* 스크롤 바 상 하단 버튼 */
+/* 스크롤 바 */
+.rank_profile > .profile {
+    width: 141px;
+    height: 126px;
+    margin: 6px 7px 6px 6px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.yellow {
+    color: #ffd972;
+}
+
+input {
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #6d6d6d;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #397524 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #d7d7d7;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #b6b6b6;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #d3d5d3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #c8c9c8;
+}

@@ -1,0 +1,351 @@
+/*************** 폰트 추가 *****************/
+@font-face {
+    font-family: 'H2hdrM';
+    src: url('../../src/assets/fonts/H2HDRM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElMessiri';
+    src: url('../../src/assets/fonts/ElMessiri-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElMessiri';
+    src: url('../../src/assets/fonts/ElMessiri-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../../src/assets/fonts/NotoSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSans';
+    src: url('../../src/assets/fonts/NotoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('../../src/assets/fonts/NotoSansKR-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url('../../src/assets/fonts/NotoSansKR-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orbitron';
+    src:url('../../src/assets/fonts/Orbitron-Medium.eot');
+    src:url('../../src/assets/fonts/Orbitron-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../../src/assets/fonts/Orbitron-Medium.woff') format('woff'),
+    url('../../src/assets/fonts/Orbitron-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Orbitron';
+    src:url('../../src/assets/fonts/Orbitron-Bold.eot');
+    src:url('../../src/assets/fonts/Orbitron-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../src/assets/fonts/Orbitron-Bold.woff') format('woff'),
+    url('../../src/assets/fonts/Orbitron-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../src/assets/fonts/Orbitron-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('../../src/assets/fonts/Oswald-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LoveraPersonal';
+    src:url('../../src/assets/fonts/LoveraPersonal.eot');
+    src:url('../../src/assets/fonts/LoveraPersonal.eot?#iefix') format('embedded-opentype'),
+    url('../../src/assets/fonts/LoveraPersonal.woff') format('woff'),
+    url('../../src/assets/fonts/LoveraPersonal.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../src/assets/fonts/segoeui.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../../src/assets/fonts/seguisb.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/***************************************/
+
+
+*:lang(en) {
+    padding: 0;
+    margin: 0;
+    font-family: 'NotoSans',sans-serif;
+    font-weight: 300;
+}
+
+*:lang(ko){
+    padding: 0;
+    margin: 0;
+    font-family: 'NotoSansKR',sans-serif;
+    font-weight: 300;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'NotoSansKR',sans-serif;
+    outline: none;
+    border: 0;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+}
+input{
+    line-height: 0;
+    padding-left: 22px;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+input:focus {
+    outline:none;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; }
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; }
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; }
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    object-fit: contain;
+}
+
+ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .3s ease-in;
+}
+button:hover, button img:hover {
+    color: #faebae !important;
+    transition: all .3s ease-in;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 15px;
+    background-image: none;
+    background-size: 100% 100%;
+}
+/* 스크롤 바 */
+::-webkit-scrollbar-track {
+    background-color: #59657c;
+    border-radius: 10px;
+}
+/* 스크롤 바 밑의 배경 */
+::-webkit-scrollbar-thumb {
+    background: #9099b7;
+    border-radius: 10px;
+}
+/* 실질적 스크롤 바 */
+::-webkit-scrollbar-thumb:hover {
+    background: #63b7d6;
+}
+/* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
+::-webkit-scrollbar-thumb:active {
+    background: #63b7d6;
+}
+/* 실질적 스크롤 바를 클릭할 때 */
+::-webkit-scrollbar-button {
+    display: none;
+}
+/* 스크롤 바 상 하단 버튼 */
+/* 스크롤 바 */
+.rank_profile > .profile {
+    width: 141px;
+    height: 126px;
+    margin: 6px 7px 6px 6px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.yellow {
+    color: #ffd972;
+}
+
+input {
+    background-color: transparent;
+}
+input::placeholder {
+    color: #6d6d6d;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%
+}
+
+.commonInput {
+    width: 181px;
+    height: 30px;
+    background-color: black;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top, #5c5448, #958c7a, #988f7b, #776e5f, #4f483e);
+    border-image-slice: 1;
+}
+
+.commonViewBox {
+    width: 151px;
+    height: 26px;
+    background-color: #171a1e;
+    border-radius: 6px;
+    box-shadow: 0px 1px 0.8px 0.2px rgba(90, 135, 204, 0.6);
+}
+
+.requestButtonWrap {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.requestButton {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 50px;
+    background-color: black;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top, #5c5448, #958c7a, #988f7b, #776e5f, #4f483e);
+    border-image-slice: 1;
+    color: #decb95;
+}
+.caption {
+    background-image: url("../assets/background/modalCaptionBg.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 41px;
+    color: #ffdd40;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoverEvent{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: c;
+}
+
+.hoverEvent:hover {
+    cursor: pointer;
+    transform: scale(0.98);
+    transition: all .2s ease-in;
+}
+
+.buttonWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buttonWrap button {
+    background-image: url("../assets/btns/btn-login.png");
+    background-size: 100% 100%;
+    width: 172px;
+    height: 52px;
+}
+
+.redButton {
+    width: 92px;
+    height: 34px;
+    box-shadow: 0 0 0 0 #000, inset 0 0 0 0 #000, inset 0 0 0 1px #7c838c, 0px 1px 0.8px 1.2px rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to top, #510a0a, #75181f, #8b2525, #75181f, #510a0a);
+    color: white;
+}
